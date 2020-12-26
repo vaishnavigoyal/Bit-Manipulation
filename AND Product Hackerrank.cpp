@@ -19,24 +19,25 @@ int main()
 
   while(t--)
   {
-    int a,b;
+    ll a,b;
     cin>>a>>b;
 
-    int d=(b-a+1);
+    ll d=(b-a);
 
-    int res=0;
+    ll res=0;
+    ll f=1;
 
     for(int i=0;i<32;i++)
     {
-      if(d>(1<<i))
+      if(d>(f<<i))
       {
         continue;
       }
       else
       {
-        if((a&(1<<i))&&(b&(1<<i)))
+        if((a&(f<<i))&&(b&(f<<i)))
         {
-          res+=(1<<i);
+          res+=(f<<i);
         }
       }
     }
