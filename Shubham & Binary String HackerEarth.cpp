@@ -3,7 +3,7 @@
 // Solved using bit manipulation
 // Observation : Number of 0 in the string
 // Is Equal to the number of even decimal value
-// Because the number of times 0 will beon the LSB , then the decimal value will be even
+// Because the Number of times 0 will beon the LSB , then the decimal value will be even
 
 #include <bits/stdc++.h>
 #define ll long long
